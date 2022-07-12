@@ -9,7 +9,7 @@ ORDER BY length
 OFFSET 5
 LIMIT 5;
 
-2-> SELECT * FROM customer
+3-> SELECT * FROM customer
 WHERE store_id=1
 ORDER BY last_name DESC
 LIMIT 4;
