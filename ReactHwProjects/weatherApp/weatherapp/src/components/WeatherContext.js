@@ -19,14 +19,14 @@ export const WeatherProvider = ({ children }) => {
   const [weatherData, setWeatherData] = useState([]);
   const [city, setCity] = useState(initialValue);
   const [oneCity, setOneCity] = useState([]);
-  const [isDark, setIsDark] = useState(localStorage.getItem("isDark") || "");
-  const [isCelcius, setIsCelcius] = useState(
+//  const [isDark, setIsDark] = useState(localStorage.getItem("isDark") || "");
+ // const [isCelcius, setIsCelcius] = useState(
     localStorage.getItem("isCelcius") || "metric"
   );
   
   useEffect(() => {
-    localStorage.setItem("isDark", isDark);
-    localStorage.setItem("isCelcius", isCelcius);
+  //  localStorage.setItem("isDark", isDark);
+ //   localStorage.setItem("isCelcius", isCelcius);
     const getWeatherData = async () => {
       try {
         const { data } = await axios.get(
